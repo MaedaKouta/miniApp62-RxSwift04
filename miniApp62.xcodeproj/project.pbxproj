@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		87BC800D288EB3950089936D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BC800C288EB3950089936D /* AppDelegate.swift */; };
 		87BC800F288EB3950089936D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BC800E288EB3950089936D /* SceneDelegate.swift */; };
-		87BC8011288EB3950089936D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BC8010288EB3950089936D /* ViewController.swift */; };
-		87BC8014288EB3950089936D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87BC8012288EB3950089936D /* Main.storyboard */; };
+		87BC8011288EB3950089936D /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BC8010288EB3950089936D /* EmailViewController.swift */; };
 		87BC8016288EB3960089936D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87BC8015288EB3960089936D /* Assets.xcassets */; };
 		87BC8019288EB3960089936D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87BC8017288EB3960089936D /* LaunchScreen.storyboard */; };
+		87BC8022288EC0780089936D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 87BC8021288EC0780089936D /* SnapKit */; };
+		87BC8025288EC0940089936D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 87BC8024288EC0940089936D /* RxCocoa */; };
+		87BC8027288EC0940089936D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 87BC8026288EC0940089936D /* RxSwift */; };
+		87BC802C288EC1FC0089936D /* EmailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BC802B288EC1FC0089936D /* EmailModel.swift */; };
+		87BC802E288EC20E0089936D /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BC802D288EC20E0089936D /* EmailViewModel.swift */; };
+		87BC8030288EC2DF0089936D /* EmailLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BC802F288EC2DF0089936D /* EmailLabel.swift */; };
+		87BC8032288EC2EE0089936D /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BC8031288EC2EE0089936D /* EmailTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87BC8009288EB3950089936D /* miniApp62.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniApp62.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BC800C288EB3950089936D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87BC800E288EB3950089936D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		87BC8010288EB3950089936D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		87BC8013288EB3950089936D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87BC8010288EB3950089936D /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		87BC8015288EB3960089936D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87BC8018288EB3960089936D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87BC801A288EB3960089936D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87BC802B288EC1FC0089936D /* EmailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModel.swift; sourceTree = "<group>"; };
+		87BC802D288EC20E0089936D /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
+		87BC802F288EC2DF0089936D /* EmailLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLabel.swift; sourceTree = "<group>"; };
+		87BC8031288EC2EE0089936D /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87BC8027288EC0940089936D /* RxSwift in Frameworks */,
+				87BC8025288EC0940089936D /* RxCocoa in Frameworks */,
+				87BC8022288EC0780089936D /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,42 @@
 		87BC800B288EB3950089936D /* miniApp62 */ = {
 			isa = PBXGroup;
 			children = (
+				87BC8028288EC1A00089936D /* View */,
+				87BC802A288EC1B10089936D /* Model */,
+				87BC8029288EC1A80089936D /* ViewModel */,
 				87BC800C288EB3950089936D /* AppDelegate.swift */,
 				87BC800E288EB3950089936D /* SceneDelegate.swift */,
-				87BC8010288EB3950089936D /* ViewController.swift */,
-				87BC8012288EB3950089936D /* Main.storyboard */,
 				87BC8015288EB3960089936D /* Assets.xcassets */,
 				87BC8017288EB3960089936D /* LaunchScreen.storyboard */,
 				87BC801A288EB3960089936D /* Info.plist */,
 			);
 			path = miniApp62;
+			sourceTree = "<group>";
+		};
+		87BC8028288EC1A00089936D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87BC8010288EB3950089936D /* EmailViewController.swift */,
+				87BC802F288EC2DF0089936D /* EmailLabel.swift */,
+				87BC8031288EC2EE0089936D /* EmailTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87BC8029288EC1A80089936D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				87BC802D288EC20E0089936D /* EmailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		87BC802A288EC1B10089936D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87BC802B288EC1FC0089936D /* EmailModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +122,11 @@
 			dependencies = (
 			);
 			name = miniApp62;
+			packageProductDependencies = (
+				87BC8021288EC0780089936D /* SnapKit */,
+				87BC8024288EC0940089936D /* RxCocoa */,
+				87BC8026288EC0940089936D /* RxSwift */,
+			);
 			productName = miniApp62;
 			productReference = 87BC8009288EB3950089936D /* miniApp62.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +155,10 @@
 				Base,
 			);
 			mainGroup = 87BC8000288EB3950089936D;
+			packageReferences = (
+				87BC8020288EC0780089936D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				87BC8023288EC0940089936D /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 87BC800A288EB3950089936D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +175,6 @@
 			files = (
 				87BC8019288EB3960089936D /* LaunchScreen.storyboard in Resources */,
 				87BC8016288EB3960089936D /* Assets.xcassets in Resources */,
-				87BC8014288EB3950089936D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +185,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87BC8011288EB3950089936D /* ViewController.swift in Sources */,
+				87BC802C288EC1FC0089936D /* EmailModel.swift in Sources */,
+				87BC8011288EB3950089936D /* EmailViewController.swift in Sources */,
+				87BC8032288EC2EE0089936D /* EmailTextField.swift in Sources */,
 				87BC800D288EB3950089936D /* AppDelegate.swift in Sources */,
+				87BC8030288EC2DF0089936D /* EmailLabel.swift in Sources */,
 				87BC800F288EB3950089936D /* SceneDelegate.swift in Sources */,
+				87BC802E288EC20E0089936D /* EmailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		87BC8012288EB3950089936D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				87BC8013288EB3950089936D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		87BC8017288EB3960089936D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +335,6 @@
 				INFOPLIST_FILE = miniApp62/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +362,6 @@
 				INFOPLIST_FILE = miniApp62/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +399,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		87BC8020288EC0780089936D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		87BC8023288EC0940089936D /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		87BC8021288EC0780089936D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87BC8020288EC0780089936D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		87BC8024288EC0940089936D /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87BC8023288EC0940089936D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		87BC8026288EC0940089936D /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87BC8023288EC0940089936D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 87BC8001288EB3950089936D /* Project object */;
 }
